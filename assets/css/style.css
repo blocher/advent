@@ -122,8 +122,15 @@ h4.ui.header {
     max-width: 256px !important;
 }
 
+.mobile-only {
+    display: none !important;
+}
 
 @media only screen and (max-width: 700px) {
+
+    .mobile-only {
+        display: block !important;
+    }
     .ui.fixed.menu {
         display: none !important;
     }
