@@ -44,7 +44,7 @@
 <div id="home" class="pusher ui container">
     <div class="ui inverted vertical masthead center aligned segment">
 
-        <div class="ui container">
+        <div class="ui container desktop-only">
             <div class="ui large secondary inverted pointing menu">
 <!--                <a class="toc item">-->
 <!--                    <i class="sidebar icon"></i>-->
@@ -61,6 +61,15 @@
             </div>
         </div>
 
+        <div class="mobile-only">
+
+            <i class="icon hamburger mobile-only show-menu"></i>
+            <div class="item logo center">
+                <img src="assets/images/logo2.jpg" alt="Church of the Advent"/>
+            </div>
+
+        </div>
+
         <div class="ui text container">
             <!--            <img src="assets/images/logo2.jpg" alt="Church of the Advent"/>-->
             <!--            <h4>A Christ-centered, Spirit-filled Episcopal Church proclaiming the Good News of Jesus Christ to Brookline-->
@@ -68,7 +77,7 @@
             <!--            <h4 class="ui heading tagline right">Sundays at 9:30 am&nbsp;&nbsp;&bull;&nbsp;&nbsp;3010 Pioneer Ave, Pittsburgh, PA 15226</h4>-->
         </div>
     </div>
-    <div class="ui inverted vertical masthead center aligned segment mobile-only">
+    <div class="ui inverted vertical masthead center aligned segment hidden">
         <div class="ui secondary inverted menu stackable">
             <a class="item active" href="#home">Home</a>
             <a class="item" href="#location">Time & Location</a>
@@ -82,7 +91,7 @@
         <img class="ui fluid image" src="assets/images/exterior.jpg"/>
     </div>
 
-    <div id="location" class="ui vertical stripe quote segment">
+    <div id="location" class="ui vertical stripe segment">
         <div class="ui equal width stackable internally celled grid">
             <div class="center aligned row">
                 <div class="column">
@@ -124,6 +133,7 @@
     <div class="ui vertical center aligned ">
         <img class="ui fluid image" src="assets/images/congregation.jpeg"/>
     </div>
+    <div class="ui divider"></div>
     <div id="worship" class="ui vertical stripe segment">
         <div class="ui aligned stackable grid container">
             <div class="row">
@@ -159,12 +169,8 @@
     <div id="clergy" class="ui vertical stripe segment">
         <div class="ui aligned stackable grid container">
             <div class="row">
-                <div class="column sixteen wide">
-                    <h3 class="ui header">Our Clergy and Leadership</h3>
-                </div>
-            </div>
-            <div class="row">
                 <div class="ui column ten wide">
+                    <h3 class="ui header">Our Clergy</h3>
                     <div class="ui link cards fluid">
                         <div class="card">
                             <div class="image">
@@ -233,7 +239,8 @@
                     </div>
                 </div>
                 <div class="ui column six wide">
-                    <h4 class="ui header">Vestry (Congregational Leadership)</h4>
+                    <h3 class="ui header">Our Vestry</h3>
+                    <h4 class="ui header">Congregational Leadership</h4>
                     <div class="ui relaxed divided list">
 
                         <div class="item">
@@ -273,13 +280,33 @@
                 </div>
             </div>
         </div>
+
     </div>
 
+    <div class="ui vertical center aligned ">
+        <img class="ui fluid image" src="assets/images/interior.png"/>
+    </div>
+    <div class="ui divider"></div>
     <div id="outreach" class="ui vertical stripe segment">
         <div class="ui aligned stackable grid container">
             <div class="row">
-                <div class="eight wide column">
+                <div class="column">
                     <h3 class="ui header">Outreach and the Brookline Community</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seven wide right floated column">
+                    <img class="ui image fluid rounded" class="ui image fluid" src="assets/images/kitchen.jpg"
+                         class="ui large bordered rounded image">
+                    <a href="https://www.post-gazette.com/local/city/2018/12/25/Tiny-Brookline-Episcopal-church-feeds-hundreds-Christmas-Pittsburgh/stories/201812250079" target="_blank">
+                        <img class="ui image fluid rounded" src="assets/images/pg.jpg"
+                             class="ui large bordered rounded image">
+                        <img class="ui image fluid rounded" src="assets/images/pg2.png"
+                             class="ui large bordered rounded image">
+                    </a>
+                </div>
+                <div class="eight wide column">
+
                     <div class="ui segment">
                         <h4 class="ui header">Church of the Advent's Community Dinner</h4>
                         <p>For over 70 years, the Church of the Advent has hosted Christmas Day dinner for anyone in the
@@ -295,26 +322,15 @@
                             organizations such as Alcoholics Anonymous.</p>
                     </div>
                 </div>
-                <div class="seven wide right floated column">
-                    <img class="ui image fluid rounded" class="ui image fluid" src="assets/images/kitchen.jpg"
-                         class="ui large bordered rounded image">
-                    <a href="https://www.post-gazette.com/local/city/2018/12/25/Tiny-Brookline-Episcopal-church-feeds-hundreds-Christmas-Pittsburgh/stories/201812250079" target="_blank">
-                    <img class="ui image fluid rounded" src="assets/images/pg.jpg"
-                         class="ui large bordered rounded image">
-                    <img class="ui image fluid rounded" src="assets/images/pg2.png"
-                         class="ui large bordered rounded image">
-                    </a>
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="ui vertical center aligned ">
-        <img class="ui fluid image" src="assets/images/interior.png"/>
-    </div>
-    <div id="covid" class="ui vertical stripe quote segment">
+
+    <div id="covid" class="ui vertical stripe segment">
         <div class="ui equal width stackable internally celled grid">
             <div class="center aligned row">
+
                 <div class="column">
                     <h3 class="ui header">Covid Protocols</h3>
                     <p>In order to best love our neighbor and protect the vulnerable, we have implemented the following
@@ -340,6 +356,7 @@
                     </div>
                 </div>
                 <div class="column">
+                    <img class="ui image fluid rounded bordered" src="assets/images/covid.png">
                     <div class="ui segment">
                         <h3 class="ui header">Live Stream</h3>
                         <p>
@@ -353,7 +370,6 @@
                             streamed on our Facebook page. You do not need to join Facebook to watch these live streams.
                             They typically begin a minute or two after 9:30 a.m.</small></p>
                     </div>
-                    <img class="ui image fluid rounded bordered" src="assets/images/covid.png">
                 </div>
             </div>
         </div>
@@ -388,7 +404,7 @@
                 <div class="seven wide column">
                     <img class="ui image fluid footer-logo" src="assets/images/logo2.jpg" alt="Church of the Advent"/>
                     <p>Proclaiming the Good News of Jesus Christ to
-                        Brookline and greater Pittsburgh
+                        Brookline and Greater Pittsburgh
                     <p>Sundays at 9:30 am</p>
                     <p><a href="https://goo.gl/maps/NcVtB7VozZmEzMsB7" target="_blank">3010 Pioneer Ave, Pittsburgh,
                         PA</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="tel:412-561-4520">(412) 561-4520</a></p>

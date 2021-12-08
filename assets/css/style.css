@@ -116,6 +116,8 @@ h4.ui.tagline {
 
 h4.ui.header {
     font-size: 1.5em;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .ui.fluid.image.footer-logo {
@@ -126,11 +128,25 @@ h4.ui.header {
     display: none !important;
 }
 
+
+div.ui.divider {
+    margin-top: 2.5em;
+}
+
+.hidden {
+    display: none;
+}
+
 @media only screen and (max-width: 700px) {
 
     .mobile-only {
         display: block !important;
     }
+
+    .desktop-only {
+        display: none !important;
+    }
+
     .ui.fixed.menu {
         display: none !important;
     }
