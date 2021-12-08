@@ -171,6 +171,10 @@ div.ui.divider {
         display: none !important;
     }
 
+    .ui.container.desktop-only {
+        display: none !important;
+    }
+
     .ui.fixed.menu {
         display: none !important;
     }
