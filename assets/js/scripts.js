@@ -23,12 +23,6 @@ $(document)
             $('.ui.sidebar').sidebar('hide');
         });
 
-        $('.ui.sticky')
-            .sticky({
-                context: '#example1'
-            })
-        ;
-
         $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
 
