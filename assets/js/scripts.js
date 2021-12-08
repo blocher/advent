@@ -1,14 +1,14 @@
 $(document)
-    .ready(function() {
+    .ready(function () {
 
         // fix menu when passed
         $('.masthead')
             .visibility({
                 once: false,
-                onBottomPassed: function() {
+                onBottomPassed: function () {
                     $('.fixed.menu').transition('fade in');
                 },
-                onBottomPassedReverse: function() {
+                onBottomPassedReverse: function () {
                     $('.fixed.menu').transition('fade out');
                 }
             })
@@ -19,7 +19,9 @@ $(document)
             .sidebar('attach events', '.show-menu')
         ;
 
-        $('.item').click(function() { $('.ui.sidebar').sidebar('hide'); });
+        $('.item').click(function () {
+            $('.ui.sidebar').sidebar('hide');
+        });
 
         $('.ui.sticky')
             .sticky({
@@ -36,6 +38,4 @@ $(document)
         });
 
     })
-
-
 ;
