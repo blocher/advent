@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>Church of the Advent</title>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=3">
-    <script src="assets/js/scripts.js?v=3"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=5">
+    <script src="assets/js/scripts.js?v=5" async></script>
+
+
 </head>
 <body class="pushable">
 
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu" style="display:block">
+<div class="ui large top fixed hidden menu">
     <div class="ui container">
         <a class="item" href="#home">Home</a>
         <a class="item" href="#location">Time & Location</a>
@@ -47,7 +49,7 @@
         <div class="ui container desktop-only">
             <div class="ui large secondary inverted pointing menu">
                 <a class="item active" href="#home">Home</a>
-                <a class="item" href="#location">Time & Location</a>
+                <a class="item scroll" href="#location">Time & Location</a>
                 <a class="item" href="#worship">Worship</a>
                 <a class="item" href="#clergy">Clergy</a>
                 <a class="item" href="#outreach">Outreach</a>
@@ -60,7 +62,13 @@
 
         <div class="mobile-only">
 
-            <i class="icon hamburger mobile-only show-menu"></i>
+            <a href="#main-menu"
+               id="main-menu-toggle"
+               class="menu-toggle"
+               aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <i class="icon hamburger" aria-hidden="true"></i>
+            </a>
             <div class="ui item logo center aligned">
                 <img src="assets/images/logo2.jpg" alt="Church of the Advent"/>
             </div>
@@ -74,16 +82,33 @@
             <!--            <h4 class="ui heading tagline right">Sundays at 9:30 am&nbsp;&nbsp;&bull;&nbsp;&nbsp;3010 Pioneer Ave, Pittsburgh, PA 15226</h4>-->
         </div>
     </div>
-    <div class="ui inverted vertical masthead center aligned segment hidden">
-        <div class="ui secondary inverted menu stackable">
-            <a class="item active" href="#home">Home</a>
-            <a class="item" href="#location">Time & Location</a>
-            <a class="item" href="#worship">Worship</a>
-            <a class="item" href="#clergy">Clergy</a>
-            <a class="item" href="#outreach">Outreach</a>
-            <a class="item" href="#covid">COVID-19</a>
-        </div>
-    </div>
+
+    <header>
+
+
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <a href="#main-menu-toggle"
+               id="main-menu-close"
+               class="menu-close"
+               aria-label="Close main menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fa fa-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li><a class="item active" href="#home">Home</a></li>
+                <li><a class="item" href="#location">Time & Location</a></li>
+                <li><a class="item" href="#worship">Worship</a></li>
+                <li><a class="item" href="#clergy">Clergy</a></li>
+                <li><a class="item" href="#outreach">Outreach</a></li>
+                <li><a class="item" href="#covid">COVID-19</a></li>
+            </ul>
+        </nav>
+        <a href="#main-menu-toggle"
+           class="backdrop"
+           tabindex="-1"
+           aria-hidden="true" hidden></a>
+    </header>
+
     <div class="ui vertical center aligned ">
         <img class="ui fluid image" src="assets/images/exterior.jpg"/>
     </div>
