@@ -301,6 +301,10 @@ div.ui.divider {
     top: 0;
 }
 
+.feature-image {
+    max-width: 5rem;
+    filter: invert(29%) sepia(50%) saturate(1224%) hue-rotate(9deg) brightness(95%) contrast(103%);
+}
 /*
  On small devices, allow it to toggle...
 */
